@@ -70,7 +70,7 @@ if ticker:
         fig.add_trace(px.Scatter(x=df.index, y=df['Signal_Line'], mode='lines', name='Signal', line=dict(color='red')), row=3, col=1)
 
         # Chart Layout Adjustments
-        fig.update_layout(height=800, xaxis_rangeslider_visible=False, theme="seaborn")
+        fig.update_layout(height=800, xaxis_rangeslider_visible=False, template="seaborn")
         fig.update_yaxes(title_text="Price ($)", row=1, col=1)
         fig.update_yaxes(title_text="RSI", row=2, col=1)
         fig.update_yaxes(title_text="MACD", row=3, col=1)
